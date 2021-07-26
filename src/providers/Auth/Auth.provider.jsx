@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext, useCallback } from 'react';
 import { AUTH_STORAGE_KEY } from '../../utils/constants';
 import { storage } from '../../utils/storage';
 
-const AuthContext = React.createContext(null);
+const AuthContext = React.createContext(true);
 
 function useAuth() {
   const context = useContext(AuthContext);
